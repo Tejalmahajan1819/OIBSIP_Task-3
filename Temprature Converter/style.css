@@ -1,0 +1,97 @@
+/*style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background:url("tepreture.jpg") no-repeat center center/cover;
+    color: #222;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .title {
+    color: #222;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .temperature-converter {
+    border-radius: 5px;
+    background: #ecebeb;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 32px 30px 25px;
+    flex-direction: column;
+    min-width: 600px;
+    height: auto;
+    width: 100%;
+  }
+  .result {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .result-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+  }
+  label {
+    margin-bottom: 6px;
+    color: #555;
+    font-size: 0.8rem;
+  }
+  .celsius-value {
+    padding: 10px;
+    border-bottom: 3px solid #a39e9e;
+  }
+  input,
+  select {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #a39e9e;
+    margin-bottom: 15px;
+    outline: none;
+    padding: 8px;
+
+  }
+  input:focus {
+    border: 1px solid #4c49f3;
+  }
+  .degree-type {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .degree-field {
+    flex-direction: column;
+    width: 46%;
+    display: flex;
+  }
+  option {
+    color: #f6f6f6;
+    background-color: #3c39e7;
+  }
+  #convert-btn {
+    border-radius: 5px;
+    color: #f6f6f6;
+    outline: none;
+    background: linear-gradient(to bottom, #3633f3, #120fb9);
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 12px 80px;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+    letter-spacing: 1px;
+  }
+  #convert-btn:hover {
+    background: linear-gradient(to bottom, #4a47e7, #322fda);
+  }
