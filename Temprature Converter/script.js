@@ -20,7 +20,8 @@ function convertToCelsius() {
 if (tempType.value === "fahrenheit") {
     const FahrenheitToCelsius = (inputValue - 32) * (5 / 9);
     celsiusElem.innerHTML = `${FahrenheitToCelsius.toFixed(3)} &deg;c`;
-  } else if (tempType.value === "kelvin") {
+  } 
+else if (tempType.value === "kelvin") {
     const KelvinToCelsius = inputValue - 273.15;
     celsiusElem.innerHTML = `${KelvinToCelsius.toFixed(3)} &deg;c`;
   }
